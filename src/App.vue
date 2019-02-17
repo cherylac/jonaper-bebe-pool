@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="page-header">
-  <h1>When will Baby Bing get here??</h1>
+  <h1>What will IT be? And when will IT get here??</h1>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -14,8 +14,8 @@
           <input type="text" id="entryContestant" class="form-control" v-model="newEntry.contestant">
         </div>
         <div class="form-group">
-          <label for="entryEmail">Email:</label>
-          <input type="text" id="entryTitle" class="form-control" v-model="newEntry.email">
+          <label for="entryGirlorboy">Girl or Boy:</label>
+          <input type="text" id="entryTitle" class="form-control" v-model="newEntry.gender">
         </div>
         <div class="form-group">
           <label for="bookUrl">Guess Date:</label>
@@ -42,7 +42,7 @@
       <thead>
         <tr>
           <th>Name</th>
-          <th>Email</th>
+          <th>Girl or Boy</th>
           <th>Date</th>
           <th>Weight</th>
           <th>Baby's Name</th>
@@ -52,7 +52,7 @@
         <tbody>
           <tr v-for="entry in entries">
             <td>{{entry.contestant}}</td>
-            <td>{{entry.email}}</td>
+            <td>{{entry.gender}}</td>
             <td>{{entry.date}}</td>
             <td>{{entry.weight}}</td>
             <td>{{entry.babyname}}</td>
@@ -90,7 +90,7 @@ export default {
     return {
       newEntry: {
           contestant: '',
-          email: '',
+          gender: '',
           date: '',
           weight:'',
           babyname:''
@@ -102,7 +102,7 @@ methods: {
   addEntry: function () {
     entriesRef.push(this.newEntry);
     this.newEntry.contestant = '';
-    this.newEntry.email = '';
+    this.newEntry.gender = '';
     this.newEntry.date = '';
     this.newEntry.weight = '';
     this.newEntry.babyname = '';
