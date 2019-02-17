@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="page-header">
-  <h1>Baby Pool</h1>
+  <h1>When will Baby Bing get here??</h1>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -68,12 +68,12 @@
 import Firebase from 'firebase'
 import toastr from 'toastr'
  let config = {
-    apiKey: "AIzaSyCQphEKrAx7M6kCA0wqlj2QICzcrycLpeA",
-    authDomain: "birthdate-pool.firebaseapp.com",
-    databaseURL: "https://birthdate-pool.firebaseio.com",
-    projectId: "birthdate-pool",
-    storageBucket: "birthdate-pool.appspot.com",
-    messagingSenderId: "838139933356"
+    apiKey: "AIzaSyCA7bgqjV6zRApbkdW6ajRWD3nNX06vifw",
+    authDomain: "starter-project-13ba9.firebaseapp.com",
+    databaseURL: "https://starter-project-13ba9.firebaseio.com",
+    projectId: "starter-project-13ba9",
+    storageBucket: "starter-project-13ba9.appspot.com",
+    messagingSenderId: "508138870539"
   };
   
 let app = Firebase.initializeApp(config)
